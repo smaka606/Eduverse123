@@ -1,0 +1,21 @@
+# Test Checklist / QA
+
+This file lists the acceptance criteria that must be passed before submission.
+
+## Basic Functionality
+- [ ] index.html opens without console errors in Chrome, Firefox, and Edge (when served by a local server).
+- [ ] The application is responsive and displays correctly at 360px, 768px, and 1200px widths.
+- [ ] The application does not rely on any backend and uses LocalStorage for data.
+- [ ] The 3D scene loads correctly via the Three.js library.
+- [ ] All internal links and asset paths are correct (no 404 errors).
+- [ ] The application has reasonable performance on initial load.
+- [ ] The README.md file clearly explains how to run and test the application.
+
+## User Flow Tests
+- [ ] User can "login" as a guest.
+- [ ] User can "login" with a name.
+- [ ] After login, the user is redirected to the home page.
+- [ ] User can navigate to the "3D Space" page and see the 3D scene.
+- [ ] User can interact with the 3D scene (orbit and zoom).
+- [ ] User can navigate between all pages using the header links.
+- [ ] User can switch languages using the EN/AR buttons in the header.

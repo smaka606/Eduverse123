@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #e5e7eb;
+    --text-color: #1f2937;
+    --text-color-light: #6b7280;
+    --bg-color: #f9fafb;
+    --header-height: 3.5rem; /* 56px */
+    --container-padding: 1rem;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--container-padding);
+}
+
+#main-header {
+    height: var(--header-height);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--container-padding);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+#main-header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+#main-header a:hover {
+    color: var(--primary-color);
+}
+
+/* UI Components */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    /* Add RTL-specific styles here if needed */
+}
